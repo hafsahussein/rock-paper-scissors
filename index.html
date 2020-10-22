@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/style.css">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="header flex">
+    <div class="logo">
+      <img src="/images/logo.svg" alt="">
+    </div>
+    <div class="score-container flex">
+      <span>Score</span>
+      <span class="score-counter txt-dark-blue" id="score-counter">0</span>
+    </div>
+  </div>
+  <div class="choices flex" id="choices">
+    <div class="paper choice cursor-pointer flex" id="paper">
+      <div class="flex">
+        <img src="/images/icon-1.svg"  alt="" id="1">
+      </div>
+    </div>
+    <div class="scissors choice cursor-pointer flex" id="scissors">
+      <div class="flex">
+        <img src="/images/icon-2.svg"  alt="" id="2">
+      </div>
+    </div>
+    <div class="rock choice cursor-pointer flex" id="rock">
+      <div class="flex">
+        <img src="/images/icon-3.svg" alt="" id="3">
+      </div>
+    </div>
+  </div>
+  <button  class="btn cursor-pointer" id="open-model">Rules</button>
+  <div class="rules-modal txt-dark-blue flex hide"id="model">
+    <div>
+      <h4>Rules</h4>
+    </div>
+    <div >
+      <img src="/images/icon-close.svg" class="cursor-pointer" id="close-model" alt=""> 
+    </div>
+    <div>
+      <img src="/images/image-rules.svg" alt="">
+    </div>
+  </div>
+  
+  <div class="result flex hide" id="result">
+   <div class="user-result" id="user-result">
+    <div class="choice flex">
+      <div class="flex">
+        <img src=""  alt="">
+      </div>
+    </div>
+    <p>You Picked</p>
+
+   </div> 
+   <div class="result-details" id="result-details">
+    <h1></h1>
+    <button class="btn cursor-pointer txt-dark-blue" id="play-again">Play Again</button>
+  </div>
+  <div class="house-result" id="house-result">
+    <div class="choice">
+      <div class="flex">
+        <img src=""  alt="">
+      </div>
+</div>
+<p>The House Picked</p>
+   </div>
+
+      </div>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
